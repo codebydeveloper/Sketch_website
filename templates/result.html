@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!-- Custom CSS -->
+</head>
+<body class="bg-light">
+    <div class="container-fluid bg-dark py-3">
+        <h1 class="text-center text-white mb-4">Sketch Result</h1>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h3 class="mb-3">Sketch Image</h3>
+                <img src="{{ sketch_image }}" class="img-fluid mb-3" alt="Sketch">
+                <a href="{{ sketch_image }}" class="btn btn-primary btn-block" download>Download Sketch</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Developer Name Section -->
+    <div class="container-fluid bg-dark py-3 mt-5">
+        <h4 class="text-center text-white mb-0">Developed with ❤️ by</h4>
+        <h2 class="text-center text-white font-italic">Md. Ansh 🚀</h2>
+    </div>
+</body>
+</html>
